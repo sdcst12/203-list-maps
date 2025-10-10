@@ -1,6 +1,13 @@
-def functionList(a,b,*c):
-  print(a)
-  print(b)
-  print(c)
-
-functionList(3,4,5,6,7,8)
+def isEven(i):
+    if type(i) != int:
+        return False
+    if i % 2 == 0:
+        return True
+    else:
+        return False
+    
+data = [76, 56, 20, 77, 42]
+even = map(isEven, data)
+saved = list(even)
+print(saved)
+print(saved)

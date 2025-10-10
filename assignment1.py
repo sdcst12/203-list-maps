@@ -1,14 +1,10 @@
 """
-Sum of numbers
-Create a function called addNumbers() that makes use of *args to receive a variable number of inputs.  
-The return value should be the sum of the numbers.  
-Use the assertion statements below to test your results:
-```
-assert addNumbers(1,2,3,4,5) == 15
-assert addNumbers(2,5,6,10,12,20) == 55
-```
+### Assignment 1
+Convert to Fahrenheit
+Given a list of numbers that are in degrees Celsius, create a map() that returns a list of all the numbers converted to degrees Fahrenheight
 """
 
+data = [0, 10, 20.1, 34.5]
 
-assert addNumbers(1,2,3,4,5) == 15
-assert addNumbers(2,5,6,10,12,20) == 55
+
+# expected output:  [32.0, 50.0, 68.18, 94.1]
