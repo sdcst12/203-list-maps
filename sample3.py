@@ -16,12 +16,20 @@ elapsed = end - start
 print(f"This took {elapsed} seconds to generate 10 million random numbers" )
 
 start = time.time()
-dataMap = [f(i) for i in data]
+dataMap1 = []
+for i in data:
+    dataMap1.append(f(i))
+end = time.time()
+print(f"This took {end-start} seconds to do list with a for loop")
+
+
+start = time.time()
+dataMap2 = [f(i) for i in data]
 end = time.time()
 print(f"This took {end-start} seconds to do list comprehension")
 
 start = time.time()
-dataMap = map(f,data)
+dataMap3 = map(f,data)
 end = time.time()
 print(f"This took {end-start} seconds to do a list map")
 
